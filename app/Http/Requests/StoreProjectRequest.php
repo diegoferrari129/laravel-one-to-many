@@ -30,6 +30,7 @@ class StoreProjectRequest extends FormRequest
             'start_date' => 'required',
             'status' => 'required|max:20',
             'image' => 'nullable|image|max:4084',
+            'type_id' => 'nullable',
         ];
     }
 

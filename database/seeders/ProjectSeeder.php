@@ -24,8 +24,6 @@ class ProjectSeeder extends Seeder
             $project->title = $faker->sentence(3); 
             $project->description = $faker->paragraph(); 
             $project->repository = $faker->url(); 
-            $project->image = $faker->imageUrl(640, 480, 'projects'); 
-            $project->technologies = implode(', ', $faker->words(3)); 
             $project->status = $faker->randomElement(['completed', 'work in progress']); 
             $project->start_date = $faker->date(); 
             $project->end_date = $faker->date();

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('title', 50);
             $table->text('description');
             $table->string('repository', 255);
-            $table->text('technologies')->nullable();
             $table->string('status', 20)->default('work in progress');
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();

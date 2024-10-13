@@ -29,11 +29,6 @@
                             @enderror
                         </div>
                         <div class="col-4">
-                            <label for="" class="control-label">Technologies</label>
-                            <input type="text" name="technologies" id="technologies" placeholder="..."
-                                class="form-control form-control-sm" value="{{ old('technologies') }}">
-                        </div>
-                        <div class="col-4">
                             <label for="" class="control-label">Repository</label>
                             <input type="url" name="repository" id="repository"
                                 class="form-control form-control-sm @error('repository')is-invalid @enderror"
@@ -79,7 +74,7 @@
                             <select name="type_id" id="" class="form-select form-select-sm">
                                 <option value="">Select Type</option>
                                 @foreach ($types as $type)
-                                    <option value="{{ $type_id }}" @selected($type->id == old('type_id'))>{{ $type->name }}
+                                    <option value="{{ $type->id }}" @selected($type->id == old('type_id'))>{{ $type->name }}
                                     </option>
                                 @endforeach
                             </select>

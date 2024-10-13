@@ -14,7 +14,6 @@ class Project extends Model
         'title',
         'description',
         'repository',
-        'technologies',
         'status',
         'start_date',
         'end_date',

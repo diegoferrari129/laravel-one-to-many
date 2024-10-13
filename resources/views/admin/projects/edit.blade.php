@@ -35,12 +35,6 @@
                             @enderror
                         </div>
                         <div class="col-4">
-                            <label for="" class="control-label">Technologies</label>
-                            <input type="text" name="technologies" id="technologies" placeholder="..."
-                                class="form-control form-control-sm"
-                                value="{{ old('technologies', $project->technologies) }}">
-                        </div>
-                        <div class="col-4">
                             <label for="" class="control-label">Repository</label>
                             <input type="url" name="repository" id="repository"
                                 class="form-control form-control-sm @error('repository')is-invalid @enderror"

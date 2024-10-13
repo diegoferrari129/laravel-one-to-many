@@ -13,7 +13,6 @@
                         Title: {{ $project->title }}
                     </h3>
                     <p class="pt-2">Description: {{ $project->description }}</p>
-                    <p>Technologies: {{ $project->technologies }}</p>
                     <p>
                         <span>
                             Status: {{ $project->status }}
