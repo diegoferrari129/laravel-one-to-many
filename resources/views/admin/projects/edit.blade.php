@@ -75,6 +75,17 @@
                                 value="{{ old('end_date', $project->end_date) }}">
                         </div>
 
+                        <div class="col-4">
+                            <label for="" class="control-label">Project Type</label>
+                            <select name="type_id" id="" class="form-select form-select-sm">
+                                <option value="">Select Type</option>
+                                @foreach ($types as $type)
+                                    <option value="{{ $type->id }}" @selected($type->id == old('type_id', $project->type ? $project->type->id : ''))>{{ $type->name }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+
                         <div class="col-12">
                             <label for="" class="control-label">Description</label>
                             <textarea name="description" id="description" rows="10" cols="30"
