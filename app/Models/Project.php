@@ -23,6 +23,10 @@ class Project extends Model
     ];
 
     public static function generateSlug($title){
-        return str::slug($title, '-');
+        return Str::slug($title, '-');
+    }
+
+    public function type(){
+        return $this->belongTo(Type::class);
     }
 }
